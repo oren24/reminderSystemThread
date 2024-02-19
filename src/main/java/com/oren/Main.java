@@ -15,8 +15,9 @@ public class Main {
         System.out.printf("Hello and welcome!");
         Set<Reminder> remindersSet = Utils.InitRemindersSet(15);
 
+
         for (Reminder reminder : remindersSet) {
-            System.out.println(reminder);
+            System.out.println(reminder.getExpirationDate().getHour()+":"+reminder.getExpirationDate().getMinute()+" "+reminder.getText());
 //            JOptionPane.showMessageDialog(null, reminder);
             // shows a table with the reminders
 

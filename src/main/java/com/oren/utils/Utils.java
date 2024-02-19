@@ -28,13 +28,13 @@ public class Utils {
     // chooses random urgency
     public static Urgency getRandomUrgency() {
         int random = (int) (Math.random() * 3);
-        System.out.println("random = " + random);
+
         return Urgency.values()[random];
     }
     public static Set<Reminder> InitRemindersSet(int length){
         Set<Reminder> remindersSet = new HashSet<>();
         for (int index = 0; index < length; index++) {
-            remindersSet.add(new Reminder("Reminder " + index, LocalDateTime.now().plusMinutes(index), getRandomUrgency()));
+            remindersSet.add(new Reminder("Reminder " + index, LocalDateTime.now().plusMinutes(index+1), getRandomUrgency()));
         }
         return remindersSet;
     }
