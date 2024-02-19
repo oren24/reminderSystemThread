@@ -1,6 +1,7 @@
 package com.oren;
 import com.oren.dto.Reminder;
 import com.oren.enums.Urgency;
+import com.oren.threads.ReminderTask;
 import com.oren.utils.Utils;
 
 import javax.swing.*;
@@ -22,5 +23,10 @@ public class Main {
             // shows a table with the reminders
 
         }
+        ReminderTask reminderTask = new ReminderTask(remindersSet);
+
+
+        reminderTask.run();
+
     }
 }

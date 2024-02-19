@@ -34,7 +34,7 @@ public class Utils {
     public static Set<Reminder> InitRemindersSet(int length){
         Set<Reminder> remindersSet = new HashSet<>();
         for (int index = 0; index < length; index++) {
-            remindersSet.add(new Reminder("Reminder " + index, LocalDateTime.now().plusMinutes(index+1), getRandomUrgency()));
+            remindersSet.add(new Reminder("Reminder " + index, LocalDateTime.now().plusMinutes(index), getRandomUrgency()));
         }
         return remindersSet;
     }
