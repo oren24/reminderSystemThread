@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.Timer;
 
-import static com.oren.utils.Utils.localDateTimeToStringFormat;
+import static com.oren.logic.ReminderLogic.localDateTimeToStringFormat;
 
 public class ReminderSystem extends JFrame {
 
@@ -120,7 +120,7 @@ public class ReminderSystem extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 //				reminderTask.end();
-
+//				reminderTimerTask.end();
 				timer.cancel();
 				System.exit(0);
 			}

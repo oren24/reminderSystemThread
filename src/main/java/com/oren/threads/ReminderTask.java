@@ -1,14 +1,10 @@
 package com.oren.threads;
 
 import com.oren.dto.Reminder;
-import com.oren.enums.Urgency;
 
-import javax.swing.*;
-import java.time.LocalDateTime;
 import java.util.Set;
 
-import static com.oren.utils.Utils.fixTextByUrgency;
-import static com.oren.utils.Utils.localDateTimeToStringFormat;
+import static com.oren.logic.ReminderLogic.*;
 
 public class ReminderTask extends Thread {
 	private boolean quit;
@@ -22,27 +18,8 @@ public class ReminderTask extends Thread {
 	public void run() {
 		while (!quit) {
 
+			checkRemindersExpire(reminders);
 
-			for (Reminder reminder : reminders) {
-
-				if (reminder.getExpirationDate().isBefore(java.time.LocalDateTime.now()) && !reminder.isPopped()) {
-
-					Urgency urgency = reminder.getUrgency();
-					String reminderText = reminder.getText();
-					reminderText = fixTextByUrgency(reminderText, urgency);
-
-					LocalDateTime expirationDate = reminder.getExpirationDate();
-					String expirationDateText = localDateTimeToStringFormat(expirationDate);
-					String massage = "Reminder expired:\n " + reminderText + "\n at\n\t " + expirationDateText;
-					System.out.println(massage);
-					JOptionPane.showMessageDialog(null, massage);
-					reminder.setPopped(true);
-
-
-				}
-
-
-			}
 			int counter = reminders.size();
 			for (Reminder reminder : reminders) {
 

@@ -5,7 +5,7 @@ import com.oren.enums.Urgency;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-import static com.oren.utils.Utils.fixTextByUrgency;
+import static com.oren.logic.ReminderLogic.fixTextByUrgency;
 
 public class Reminder implements Comparable<Reminder> {
 	/**
