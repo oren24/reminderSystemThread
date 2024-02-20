@@ -1,4 +1,4 @@
-package com.oren.threads;
+package com.oren.timerTasks;
 
 import com.oren.dto.Reminder;
 import com.oren.enums.Urgency;
@@ -6,21 +6,22 @@ import com.oren.enums.Urgency;
 import javax.swing.*;
 import java.time.LocalDateTime;
 import java.util.Set;
+import java.util.TimerTask;
 
 import static com.oren.utils.Utils.fixTextByUrgency;
 import static com.oren.utils.Utils.localDateTimeToStringFormat;
 
-public class ReminderTask extends Thread {
+public class ReminderTimerTask extends TimerTask {
 	private boolean quit;
 	private final Set<Reminder> reminders;
 
-	public ReminderTask(Set<Reminder> reminders) {
+	public ReminderTimerTask(Set<Reminder> reminders) {
 		this.reminders = reminders;
 		this.quit = false;
 	}
 
 	public void run() {
-		while (!quit) {
+//		while (!quit) {
 
 
 			for (Reminder reminder : reminders) {
@@ -43,28 +44,11 @@ public class ReminderTask extends Thread {
 
 
 			}
-			int counter = reminders.size();
-			for (Reminder reminder : reminders) {
-
-				if (reminder.isPopped()) {
-					counter--;
-				}
-				if (counter == 0) {
-					end();
-				}
-			}
-
-			try {
-
-				Thread.sleep(1000);
-
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
+//			this.end();
+//		}
 	}
 
 	public void end() {
-		this.quit = true;
+		this.cancel();
 	}
 }
