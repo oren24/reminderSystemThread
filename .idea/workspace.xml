@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a11b17c-8ce9-4bd3-a171-9d29485e9aed" name="Changes" comment="main">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/oren/logic/ReminderLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oren/app/ReminderSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oren/app/ReminderSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oren/dto/Reminder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oren/dto/Reminder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oren/threads/ReminderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oren/threads/ReminderTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oren/timerTasks/ReminderTimerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oren/timerTasks/ReminderTimerTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/oren/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/oren/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +21,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -34,6 +35,9 @@
     &quot;assignee&quot;: &quot;oren24&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -54,26 +58,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "X:/OREN/Documents/development/java/remainderSys/reminderSystemThread",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/orend/OneDrive/Public/development/java/reminderSystemThread/src/main/java/com/oren/Main.java",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;X:/OREN/Documents/development/java/remainderSys/reminderSystemThread&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/orend/OneDrive/Public/development/java/reminderSystemThread/src/main/java/com/oren/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="com.oren.logic.ReminderLogic" />
@@ -121,9 +125,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.AddReminder" />
         <item itemvalue="Application.ReminderSystem" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +144,10 @@
       <workItem from="1708358769324" duration="48000" />
       <workItem from="1708358827200" duration="73000" />
       <workItem from="1708358960872" duration="8000" />
-      <workItem from="1708359391815" duration="28299000" />
+      <workItem from="1708359391815" duration="29036000" />
+      <workItem from="1708441037454" duration="526000" />
+      <workItem from="1708441578700" duration="17000" />
+      <workItem from="1708513601062" duration="650000" />
     </task>
     <task id="LOCAL-00001" summary="main">
       <option name="closed" value="true" />
@@ -150,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708438543387</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="main">
+      <option name="closed" value="true" />
+      <created>1708440332134</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708440332134</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,5 +185,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="main" />
     <option name="LAST_COMMIT_MESSAGE" value="main" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
